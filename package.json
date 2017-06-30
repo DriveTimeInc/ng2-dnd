@@ -7,7 +7,7 @@
     "test-watch": "tsc --noUnusedParameters --noUnusedLocals && karma start --no-single-run --auto-watch",
     "commit": "npm run prepublish && npm test && git-cz",
     "prepublish": "ngc --noUnusedParameters --noUnusedLocals && npm run build",
-    "build": "webpack && copy style.css bundles/style.css",
+    "build": "webpack & copy style.css bundles/style.css",
     "test:singleRun": "echo 'hello' ",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
