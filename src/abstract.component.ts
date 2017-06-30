@@ -235,7 +235,7 @@ export abstract class AbstractComponent {
 
             this._onDropCallback(event);
 
-            this.detectChanges();
+            // this.detectChanges(); //causes destroy objects to be called
         }
     }
 

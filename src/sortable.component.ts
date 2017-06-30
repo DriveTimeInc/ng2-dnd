@@ -3,7 +3,7 @@
 // https://github.com/akserg/ng2-dnd
 
 import { ChangeDetectorRef } from '@angular/core';
-import { Directive, Input, Output, EventEmitter, ElementRef } from '@angular/core';
+import { Directive, Input, Output, EventEmitter, ElementRef, OnDestroy } from '@angular/core';
 
 import { AbstractComponent, AbstractHandleComponent } from './abstract.component';
 import { DragDropConfig } from './dnd.config';
@@ -68,7 +68,7 @@ export class SortableContainer extends AbstractComponent {
 }
 
 @Directive({ selector: '[dnd-sortable]' })
-export class SortableComponent extends AbstractComponent {
+export class SortableComponent extends AbstractComponent implements OnDestroy {
 
     @Input('sortableIndex') index: number;
 
@@ -193,6 +193,10 @@ export class SortableComponent extends AbstractComponent {
             // Refresh changes in properties of container component
             this._sortableContainer.detectChanges();
         }
+    }
+
+    ngOnDestroy() {
+        // debugger;
     }
 }
 
