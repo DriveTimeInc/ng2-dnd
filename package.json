@@ -1,7 +1,7 @@
 {
   "name": "ng2-dnd",
   "description": "Angular 2 Drag-and-Drop without dependencies",
-  "version": "0.0.0-semantically-released",
+  "version": "4.3.0",
   "scripts": {
     "test": "karma start",
     "test-watch": "tsc --noUnusedParameters --noUnusedLocals && karma start --no-single-run --auto-watch",
@@ -68,7 +68,7 @@
     "ts-helpers": "1.1.2",
     "tslint": "^5.4.3",
     "tslint-loader": "^3.5.3",
-    "typescript": "^2.3.4",
+    "typescript": "2.3.4",
     "webpack": "^2.6.1",
     "zone.js": "^0.8.12"
   },
