@@ -8,6 +8,7 @@
     "commit": "npm run prepublish && npm test && git-cz",
     "prepublish": "ngc --noUnusedParameters --noUnusedLocals && npm run build",
     "build": "webpack && cp style.css bundles/style.css",
+    "test:singleRun": "echo 'hello' ",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "repository": {
